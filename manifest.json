@@ -27,7 +27,8 @@
       "js": [
           "lib/jspdf/libs/*.js",
           "lib/jspdf/jspdf.js",
-          "lib/jspdf/jspdf.plugin.*.js"
+          "lib/jspdf/jspdf.plugin.*.js",
+          "functions.js"
       ]
   },
   "background": {
