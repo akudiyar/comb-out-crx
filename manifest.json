@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "CombOut",
+  "description": "This extension combs out and saves lists of goods/offers on sites like avito.ru in any format you like.",
+  "version": "1.0",
+
+  "browser_action": {
+      "default_icon": {
+          "19": "images/comb19.png",
+          "38": "images/comb38.png"
+      },
+      "default_title": "CombOut"
+  },
+  "permissions": [
+      "contextMenus",
+      "downloads",
+      "tabs", "*://www.avito.ru/*"
+  ],
+  "icons": {
+      "16": "images/comb-16.png",
+      "48": "images/comb-48.png",
+      "128": "images/comb-128.png"
+  },
+  "content_scripts": {
+      "matches": "*://www.avito.ru/*",
+      "js": [
+          "lib/jspdf/libs/*.js",
+          "lib/jspdf/jspdf.js",
+          "lib/jspdf/jspdf.plugin.*.js"
+      ]
+  },
+  "background": {
+	  "scripts": [
+          "page.js"
+      ],
+	  "persistent": false
+  }
+}
