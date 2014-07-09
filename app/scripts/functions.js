@@ -35,6 +35,7 @@ function saveAsPDF(source, specialElementHeaders, fileName) {
 /**
  * Collects selected rows, sends them to supplied data filter/formatter and return clean html source string
  * @param table_xpath XPath URI pointing to table to select rows from
+ * @param datafilter forms filtered html string
  */
 function collectRows(table_xpath, datafilter) {
     var collected_rows = [];

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "CombOut",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "This extension combs out and saves lists of goods/offers from sites like avito.ru in any one of supported printable formats.",
+    "description": "The description of the application"
+  }
+}
